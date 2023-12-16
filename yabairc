@@ -17,7 +17,6 @@ yabai -m space 9 --label nine
 
 # float system preferences. Most of these just diable Yabai form resizing them.
 yabai -m rule --add app="^Activity Monitor$" manage=off
-yabai -m rule --add app="^Alfred Preferences$" manage=off
 yabai -m rule --add app="^DaisyDisk$" manage=off
 yabai -m rule --add app="^Disk Utility$" manage=off
 yabai -m rule --add app="^Downie$" manage=off
@@ -31,6 +30,8 @@ yabai -m rule --add app="^Spark$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^System Information$" manage=off
 yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^Live$" title="^Preferences$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Time Out$" manage=off
 yabai -m rule --add app="^Transmission$"  manage=off
 yabai -m rule --add app="^balenaEtcher$" manage=off
