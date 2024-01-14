@@ -15,6 +15,8 @@ yabai -m space 5 --label five
 yabai -m space 6 --label six
 yabai -m space 9 --label nine
 
+# to fix issue with floating applications always on top
+yabai -m rule --add app=".*" layer=normal
 # float system preferences. Most of these just diable Yabai form resizing them.
 yabai -m rule --add app="^Activity Monitor$" manage=off
 yabai -m rule --add app="^DaisyDisk$" manage=off
@@ -30,7 +32,6 @@ yabai -m rule --add app="^Spark$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^System Information$" manage=off
 yabai -m rule --add app="^System Preferences$" manage=off
-yabai -m rule --add app="^Live$" title="^Preferences$" manage=off
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Time Out$" manage=off
 yabai -m rule --add app="^Transmission$"  manage=off
@@ -39,7 +40,9 @@ yabai -m rule --add app="^deemix-pyweb$" manage=off
 yabai -m rule --add app="^mpv$" manage=off
 yabai -m rule --add app="^MusicBrainz Picard$" manage=off
 yabai -m rule --add app="AnyConnect" manage=off
-yabai -m rule --add app="^Telegram$" manage=on
+# yabai -m rule --add app="^Telegram$" manage=on
+yabai -m rule --add app="^Live$" title="^Preferences$" manage=off
+yabai -m rule --add app="^Live$" title="^Export Audio/Video$" manage=off
 
 #find ~/Library/Parallels/Applications\ Menus/ -maxdepth 3 -type f | awk -F'/' '{ print $NF; }' | awk '{$1=$1};1' | sort | uniq | tr "\n" "\0" | xargs -0 -I{} yabai -m rule --add app="^{}\$" title=".*" manage=on
 
