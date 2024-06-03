@@ -26,7 +26,7 @@ yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^HandBrake$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^Karabiner-EventViewer$" manage=off
-yabai -m rule --add app="^KeePassXC$" manage=off
+# yabai -m rule --add app="^KeePassXC$" manage=off
 yabai -m rule --add app="^Reminders$" manage=off
 yabai -m rule --add app="^Spark$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
@@ -39,7 +39,7 @@ yabai -m rule --add app="^balenaEtcher$" manage=off
 yabai -m rule --add app="^deemix-pyweb$" manage=off
 yabai -m rule --add app="^mpv$" manage=off
 yabai -m rule --add app="^MusicBrainz Picard$" manage=off
-yabai -m rule --add app="AnyConnect" manage=off
+# yabai -m rule --add app="AnyConnect" manage=off
 # yabai -m rule --add app="^Telegram$" manage=on
 yabai -m rule --add app="^Live$" title="^Preferences$" manage=off
 yabai -m rule --add app="^Live$" title="^Export Audio/Video$" manage=off
